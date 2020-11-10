@@ -70,7 +70,8 @@ derive_wallet calls out the dictionary of coins with addresses and private keys.
 
 
 def derive_wallets(coin):
-    command = f"./derive -g --mnemonic='{mnemonic}' --cols=path,address,privkey,pubkey --format=json --coin='{coin}' --numderive= 2"
+
+    command = f"./derive -g --mnemonic='{mnemonic}' --cols=path,address,privkey,pubkey           --format=json --coin='{coin}' --numderive= 2"
     p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
     output, err = p.communicate()
     p_status = p.wait()
@@ -131,17 +132,18 @@ def send_tx(coin, account, to, amount):
 ![BTC_TRANACTION](BTC_TRANSACTION.png)
 
 
-I ran this function in wallet.py file: send_tx(BTCTEST, Account_one, address_two, 0.002) to send BTCTEST from one account to another (see folder screen_shots for more imagies).
+I ran this function in the wallet.py file: send_tx(BTCTEST, Account_one, address_two, 0.002) to send BTCTEST from one account to another (see folder screen_shots for more imagies).
 
 
 # ETH Transaction
 
-Local PoA Ethereum transaction
+Local POA Ethereum transaction
 
 -Add one of the ETH addresses to the pre-allocated accounts in your networkname.json.
 
--Delete the geth folder in each node, then re-initialize using geth --datadir nodeX init networkname.json.
-This will create a new chain, and will pre-fund the new account
+-Delete the geth folder in each node, then re-initialize using geth --datadir nodeX init networkname.json. This will create a new chain, and will pre-fund the new account.
+
+
 
 ![RE_INIT_NODE_10](RE_INIT_NODE_10.png)
 
@@ -149,4 +151,14 @@ This will create a new chain, and will pre-fund the new account
 ![RE_INIT_NODE_10](RE_INIT_NODE_11.png)
 
 
+[Add the following middleware](https://web3py.readthedocs.io/en/stable/middleware.html#geth-style-proof-of-authority) to web3.py to support the PoA algorithm:
+
+from web3.middleware import geth_poa_middleware
+
+w3.middleware_onion.inject(geth_poa_middleware, layer=0)
+
+
+Due to a bug in web3.py, you will need to send a transaction or two with MyCrypto first, since the w3.eth.generateGasPrice() function does not work with an empty chain. You can use one of the ETH address privkey, or one of the node keystore files.
+
+Send a transaction from the pre-funded address within the wallet to another, then copy the txid into MyCrypto's TX Status, and screenshot the successful transaction like so:
 
