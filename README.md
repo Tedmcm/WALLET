@@ -133,7 +133,6 @@ send_tx(BTCTEST, Account_one, address_two, 0.002)
 
 ![BTC_Transaction](/screenshots/BTC_Transaction.png)
 
-I ran this function in the wallet.py file: send_tx(BTCTEST, Account_one, address_two, 0.002) to send BTCTEST from one account to another (see folder screen_shots for more imagies).
 
 
 # ETH Transaction
