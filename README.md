@@ -44,13 +44,13 @@ php -d pcre.jit=0 composer.phar install
 
 # hd-wallet-derive Execution
 
--Using a command line navigation to your hd-wallet-derive folder
+-Using a command line navigation to your hd-wallet-derive folder (These are examples from the GitHub website)
 
 
 ![hd-wallet-derive-folder](/screenshots/hd-wallet-derive-folder.png)
 
 
--Then execute the following commands (these are examples from the GitHub website).
+-Then execute the following commands (These are examples from the GitHub website).
 
 
 
