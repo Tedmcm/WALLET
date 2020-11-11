@@ -46,8 +46,8 @@ php -d pcre.jit=0 composer.phar install
 
 -Using a command line navigation to your hd-wallet-derive folder
 
-![hd-wallet-derive-folder.png](hd-wallet-derive-folder.png)
 
+![hd-wallet-derive-folder](/screenshots/hd-wallet-derive-folder.png)
 
 
 -Then execute the following commands (these are examples from the GitHub website).
@@ -60,8 +60,8 @@ php -d pcre.jit=0 composer.phar install
 ./hd-wallet-derive.php -g --key=xprv9tyUQV64JT5qs3RSTJkXCWKMyUgoQp7F3hA1xzG6ZGu6u6Q9VMNjGr67Lctvy5P8oyaYAL9CAWrUE9i6GoNMKUga5biW6Hx4tws2six3b9c --numderive=3 --preset=bitcoincore --cols=path,address --path-change
 
 
-![hd-wallet-derive-execute.png](hd-wallet-derive-execute.png)
 
+![hd-wallet-derive-execute](/screenshots/hd-wallet-derive-execute.png)
 
 I constructed a .py file name wallet.py that which contains functions that enabled me to transact in my bzeth and btc. The following is a break down of the code:
 
@@ -85,8 +85,8 @@ coins = {
 }
 print(coins)
 
-![function1-coins](function1-coins.png)
 
+![function1-coins](/screenshots/function1-coins.png.png)
 
 ## Function 2
 This function creates the raw, unsigned transaction that contains all metadata needed to tranact. 
@@ -129,8 +129,7 @@ def send_tx(coin, account, to, amount):
 
 
 
-![BTC_TRANACTION](BTC_TRANSACTION.png)
-
+![BTC_TRANSACTION](/screenshots/BTC_TRANSACTION.png.png)
 
 I ran this function in the wallet.py file: send_tx(BTCTEST, Account_one, address_two, 0.002) to send BTCTEST from one account to another (see folder screen_shots for more imagies).
 
@@ -145,11 +144,11 @@ Local POA Ethereum transaction
 
 
 
-![RE_INIT_NODE_10](RE_INIT_NODE_10.png)
+
+![RE_INIT_NODE_10](/screenshots/RE_INIT_NODE_10.png)
 
 
-![RE_INIT_NODE_10](RE_INIT_NODE_11.png)
-
+![RE_INIT_NODE_11](/screenshots/RE_INIT_NODE_11.png)
 
 [Add the following middleware](https://web3py.readthedocs.io/en/stable/middleware.html#geth-style-proof-of-authority) to web3.py to support the PoA algorithm:
 
@@ -162,3 +161,7 @@ Due to a bug in web3.py, you will need to send a transaction or two with MyCrypt
 
 Send a transaction from the pre-funded address within the wallet to another, then copy the txid into MyCrypto's TX Status, and screenshot the successful transaction like so:
 
+
+ETH Transaction:
+
+send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 3000)
