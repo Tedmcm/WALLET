@@ -173,7 +173,7 @@ ETH Transaction:
 send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 1000)
 
 
-![ETH_TRANSACTION)_NET](/screenshots/ETH_TRANSACTION_NET.png)
+![ETH_HASH](/screenshots/ETH_HASH.png)
 
 
-![ETH_BALANCE_HASH](/screenshots/ETH_BALANCE_HASH.png)
+![ETH](/screenshots/ETH.png)
