@@ -162,7 +162,13 @@ Due to a bug in web3.py, you will need to send a transaction or two with MyCrypt
 
 Send a transaction from the pre-funded address within the wallet to another, then copy the txid into MyCrypto's TX Status, and screenshot the successful transaction like so:
 
+TEST TRANSACTION in Mycrypto
+
+
+
+![Test-successful-tranaction](/screenshots/Test-successful-tranaction.png)
+
 
 ETH Transaction:
 
-send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 3000)
+send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 1000)
