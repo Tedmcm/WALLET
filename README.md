@@ -62,7 +62,7 @@ php -d pcre.jit=0 composer.phar install
 
 ![hd-wallet-derive-execute](/screenshots/hd-wallet-derive-execute.png)
 
-I constructed a .py file name wallet.py that which contains functions that enabled me to transact in my bzeth and btc. The following is a break down of the code:
+I constructed a .py file name wallet.py that which contains functions that enabled me to transact in ETH and BTCTEST. The following is a break down of the code:
 
 ## Function 1
 derive_wallet calls out the dictionary of coins with addresses and private keys. 
