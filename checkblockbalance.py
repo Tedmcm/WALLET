@@ -1,0 +1,14 @@
+import os
+from web3 import Web3
+
+#from dotenv import load_dotenv
+#load_dotenv()
+
+w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:8545"))
+print(w3.eth.blockNumber)
+
+
+#TO CHECK BLOCKS USE ABOVE W/FROM DOTENV IMPORT LOAD_DOTENV AND LOAD_DOTEN
+# RUN THESE IN TERMINAL W/   PYTHON CHECKBLOCKBALANCE.PY OR FILE NAME
+# OR TO CHECK BALANCE USE THIS ONE.. USE ACCOUNT YOU WANT TO CHECK FROM MYCRYPTO ADDRESS
+print(w3.eth.getBalance("0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b"))
