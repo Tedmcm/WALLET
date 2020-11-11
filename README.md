@@ -86,7 +86,7 @@ coins = {
 print(coins)
 
 
-![function1-coins](/screenshots/function1-coins.png.png)
+![function1-coins](/screenshots/function1-coins.png)
 
 ## Function 2
 This function creates the raw, unsigned transaction that contains all metadata needed to tranact. 
@@ -129,7 +129,7 @@ def send_tx(coin, account, to, amount):
 
 
 
-![BTC_TRANSACTION](/screenshots/BTC_TRANSACTION.png.png)
+![BTC_TRANSACTION](/screenshots/BTC_TRANSACTION.png)
 
 I ran this function in the wallet.py file: send_tx(BTCTEST, Account_one, address_two, 0.002) to send BTCTEST from one account to another (see folder screen_shots for more imagies).
 
