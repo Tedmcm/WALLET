@@ -127,6 +127,8 @@ def send_tx(coin, account, to, amount):
         return NetworkAPI.broadcast_tx_testnet(signed_tx)
         
 
+send_tx(BTCTEST, Account_one, address_two, 0.002)
+
 
 
 ![BTC_Transaction](/screenshots/BTC_Transaction.png)
