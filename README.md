@@ -60,7 +60,6 @@ php -d pcre.jit=0 composer.phar install
 ./hd-wallet-derive.php -g --key=xprv9tyUQV64JT5qs3RSTJkXCWKMyUgoQp7F3hA1xzG6ZGu6u6Q9VMNjGr67Lctvy5P8oyaYAL9CAWrUE9i6GoNMKUga5biW6Hx4tws2six3b9c --numderive=3 --preset=bitcoincore --cols=path,address --path-change
 
 
-![function1-coins](/screenshots/function1-coins.png)
 ![hd-wallet-derive-execute](/screenshots/hd-wallet-derive-execute.png)
 
 I constructed a .py file name wallet.py that which contains functions that enabled me to transact in my bzeth and btc. The following is a break down of the code:
