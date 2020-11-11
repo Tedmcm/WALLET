@@ -170,10 +170,13 @@ TEST TRANSACTION in Mycrypto
 
 ETH Transaction:
 
-send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 1000)
+print(send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 100))
 
+
+## Transaction from command line
 
 ![ETH_HASH](/screenshots/ETH_HASH.png)
 
+## Transaction Receipt
 
 ![ETH](/screenshots/ETH.png)
