@@ -173,7 +173,7 @@ ETH Transaction:
 print(send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 100))
 
 
-## Submitted Transaction from terminal
+## Submitted Transaction 
 
 ![ETH_HASH](/screenshots/ETH_HASH.png)
 
