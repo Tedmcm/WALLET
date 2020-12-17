@@ -88,6 +88,7 @@ print(coins)
 ![function1-coins](/screenshots/function1-coins.png)
 
 ## Function 2
+
 This function creates the raw, unsigned transaction that contains all metadata needed to tranact. 
 
 
