@@ -1,5 +1,6 @@
+# Multi-Blockchain Wallet in Python
 
-# BLOCKCHAIN WALLET
+![newtons-coin-cradle](Images/newtons-coin-cradle.jpg)
 
 ## CREATING A WALLET FOR MY BLOCKCHAIN AND SENDING TRANSACTIONS
 
