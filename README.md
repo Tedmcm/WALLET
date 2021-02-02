@@ -172,7 +172,7 @@ TEST TRANSACTION in Mycrypto
 
 ETH Transaction:
 
-print(send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7c99b", 100))
+print(send_tx(account_one, "0x7734E2eF879Eb93141f5cE42826aF6d1dBD7xxxx", 100))
 
 
 ## Submitted Transaction 
